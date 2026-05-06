@@ -1,1 +1,1 @@
-public
+document.getElementById().onclick = function()
