@@ -1,8 +1,9 @@
-title {
-   background-color : blue;
-}
-
 h1 {
    color : red;
    text-align : center;
 }
+
+p {
+   color : blue;
+   size : 4;
+} 
