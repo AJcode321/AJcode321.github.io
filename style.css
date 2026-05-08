@@ -1,5 +1,5 @@
 h1 {
-   color : red;
+   color : blue;
    text-align : center;
 }
 
@@ -7,3 +7,9 @@ p {
    color : blue;
    font-size : 40px;
 } 
+
+background {
+ 
+   background-color : black;
+   font-size : 50px;
+}
