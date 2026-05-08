@@ -3,4 +3,4 @@ function tester() {
 }
 
 document.querySelector("p").style.color = "red";
-document.querySelector("#button").addEventListener("click", () => { })
+document.querySelector("#button").addEventListener("click", () => { tester() })
