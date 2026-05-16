@@ -1,21 +1,36 @@
+/*this is the header of the website*/
 h1 {
-   color : palegreen;
+   color : orange;
    text-align : center;
 }
 
+/*this is a paragraph of the website*/
 p {
-   color : blue;
+   color : magenta;
    font-size : 40px;
+   text-align : center;
 } 
 
+/*this is the body of the website*/
 body {
- 
-   background-color : green;
+   text-shadow: 
+    -1px -1px 0 black,
+     1px -1px 0 black,
+    -1px  1px 0 black,
+     1px  1px 0 black;
+   background-color : white;
    font-size : 50px;
 }
 
-.buttonFunction
-{
-   color : orange;
-   text-font : calibri;
+/*this is the DarkMode button*/
+#button {;
+   position : relative;
+   left : 500px;
 }
+
+/*this is the LightMode button*/
+#button2 {
+   position: relative;
+   left: 550px;
+}
+
