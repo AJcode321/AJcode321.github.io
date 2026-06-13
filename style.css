@@ -1,36 +1,156 @@
-/*this is the header of the website*/
-h1 {
-   color : orange;
-   text-align : center;
-}
-
-/*this is a paragraph of the website*/
-p {
-   color : magenta;
-   font-size : 40px;
-   text-align : center;
-} 
-
-/*this is the body of the website*/
+/* page styling */
 body {
-   text-shadow: 
-    -1px -1px 0 black,
-     1px -1px 0 black,
-    -1px  1px 0 black,
-     1px  1px 0 black;
-   background-color : white;
-   font-size : 50px;
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
-/*this is the DarkMode button*/
-#button {;
-   position : relative;
-   left : 500px;
+h1 {
+  color: orange;
+  text-align: center;
+  margin-bottom: 0;
 }
 
-/*this is the LightMode button*/
-#button2 {
-   position: relative;
-   left: 550px;
+p {
+  color: magenta;
+  font-size: 28px;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+#button,
+#button2,
+.button-link {
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+.info-box {
+  background: rgba(0, 255, 0, 0.95);
+  border: 10px solid #ddd;
+  border-radius: 10px;
+  padding: 16px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.about-page {
+  background: linear-gradient(135deg, #f8f0ff 0%, #e4f7ff 50%, #fff9f0 100%);
+  min-height: 100vh;
+}
+
+.page-hero {
+  display: grid;
+  gap: 20px;
+  padding: 40px 24px;
+  max-width: 1000px;
+  margin: 0 auto 24px;
+}
+
+.hero-text {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
+}
+
+.hero-text .eyebrow {
+  margin: 0 0 12px;
+  font-size: 14px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #8c2f8f;
+}
+
+.hero-text h1 {
+  font-size: 44px;
+  margin: 0 0 12px;
+  color: #442c6d;
+}
+
+.hero-text .hero-subtitle {
+  margin: 0;
+  font-size: 20px;
+  color: #5b4a7b;
+}
+
+.hero-card {
+  background: linear-gradient(180deg, #ffe9b5 0%, #f8d8ff 100%);
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.hero-card h2 {
+  margin-top: 0;
+  color: #bd4b91;
+}
+
+.about-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  display: grid;
+  gap: 24px;
+}
+
+.feature-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.feature-card {
+  background: white;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 16px 30px rgba(77, 76, 129, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: #2e2c84;
+}
+
+.highlight-box {
+  background: rgba(255, 255, 255, 0.95);
+  border: 2px solid #8c2f8f;
+}
+
+.page-footer {
+  max-width: 1000px;
+  margin: 0 auto 40px;
+  padding: 0 24px;
+  text-align: center;
 }
 
