@@ -4,9 +4,23 @@ body {
   padding: 20px;
   font-family: Arial, sans-serif;
   background-color: white;
-  color: black;
-  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  color: white;
+  text-shadow:
+    -1.25px -1.25px 0 black,
+     1.25px -1.25px 0 black,
+    -1.25px  1.25px 0 black,
+     1.25px  1.25px 0 black;
 }
+
+profile-pic {
+  display: transform scale(0.5);
+  max-width: 100px;
+  border-radius: 50%;
+  margin: 10px auto;
+  border-image-slice: center;
+  accent-color: 100px 100px;
+}
+
 
 h1 {
   color: orange;
@@ -15,7 +29,7 @@ h1 {
 }
 
 p {
-  color: magenta;
+  color: white;
   font-size: 28px;
   text-align: center;
   margin-top: 8px;
@@ -25,94 +39,86 @@ p {
 .controls {
   display: flex;
   justify-content: center;
-  gap: 14px;
+  gap: 10px;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
 
-button {
-  padding: 10px 16px;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-button:hover {
-  opacity: 0.9;
-}
-
-#button,
-#button2,
-.button-link {
-  background-color: #333;
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px 16px;
-  border-radius: 6px;
-}
-
 .info-box {
-  background: rgba(0, 255, 0, 0.95);
-  border: 10px solid #ddd;
-  border-radius: 10px;
+  background: rgba(255, 140, 0, 0.95);
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 60px;
   padding: 16px;
   line-height: 1.6;
   font-size: 18px;
 }
 
 .about-page {
-  background: linear-gradient(135deg, #f8f0ff 0%, #e4f7ff 50%, #fff9f0 100%);
+  background: linear-gradient(135deg, #fffb00 0%, #f5ff87 50%, #fff9f0 100%);
   min-height: 100vh;
 }
 
 .page-hero {
   display: grid;
-  gap: 20px;
+  gap: 10px;
   padding: 40px 24px;
   max-width: 1000px;
-  margin: 0 auto 24px;
+  margin: 0 auto 0;
 }
 
 .hero-text {
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 24px;
+  border-radius: 60px;
   padding: 28px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.07);
-}
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.2);
+  }
 
-.hero-text .eyebrow {
-  margin: 0 0 12px;
+.hero-text {
+  margin: 0 0 20px;
   font-size: 14px;
   letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: #8c2f8f;
+  color: #FF3500;
 }
 
 .hero-text h1 {
   font-size: 44px;
-  margin: 0 0 12px;
-  color: #442c6d;
+  margin: 0 0 20px;
+  color: black;
+  text-shadow:
+     0px  0px 0 black,
+     0px  0px 0 black,
+     0px  0px 0 black,
+     0px  0px 0 black;
 }
 
 .hero-text .hero-subtitle {
   margin: 0;
   font-size: 20px;
-  color: #5b4a7b;
 }
 
 .hero-card {
-  background: linear-gradient(180deg, #ffe9b5 0%, #f8d8ff 100%);
-  border-radius: 24px;
-  padding: 28px;
+  background: linear-gradient(135deg, #c00202 0%, #fc6464 100%);
+  border-radius: 60px;
+  padding: 20px;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
 
 .hero-card h2 {
+  text-align: center;
+  margin: 0 0 8px;
+  font-size: 40px;
+  color: white;
+  text-shadow:
+    -1.25px -1.25px 0 black,
+     1.25px -1.25px 0 black,
+    -1.25px  1.25px 0 black,
+     1.25px  1.25px 0 black;
+}
+
+.hero-card p {
   margin-top: 0;
-  color: #bd4b91;
+  margin-bottom: 16px;
 }
 
 .about-content {
@@ -123,28 +129,59 @@ button:hover {
   gap: 24px;
 }
 
-.feature-grid {
+.my-projects-section {
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 60px;
+  padding: 24px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.my-projects-section h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.project-cards {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
-.feature-card {
-  background: white;
-  border-radius: 20px;
+.project-card {
+  border-radius: 60px;
   padding: 22px;
-  box-shadow: 0 16px 30px rgba(77, 76, 129, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
 }
 
-.feature-card h3 {
+.project-card h3 {
   margin-top: 0;
-  color: #2e2c84;
+  margin-bottom: 12px;
+  color: white;
+  font-size: 24px;
+}
+
+.project-card ul {
+  margin: 0;
+  padding-left: 18px;
+  color: white;
+  line-height: 1.7;
+}
+
+.card-projects {
+  background: linear-gradient(135deg, #3f6cff, #5f8cff);
+}
+
+.card-hobbies {
+  background: linear-gradient(135deg, #a24dff, #c97cff);
+}
+
+.card-goals {
+  background: linear-gradient(135deg, #0ea57a, #28c78b);
 }
 
 .highlight-box {
   background: rgba(255, 255, 255, 0.95);
-  border: 2px solid #8c2f8f;
+  border: 2px solid black;
 }
 
 .page-footer {
@@ -153,3 +190,4 @@ button:hover {
   padding: 0 24px;
   text-align: center;
 }
+
